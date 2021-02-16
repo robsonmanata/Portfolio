@@ -1,0 +1,17 @@
+{
+  "name": "robson_portfolio",
+  "version": "1.0.0",
+  "description": "A Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robson Manata",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
