@@ -24,8 +24,11 @@ app.get("/portfolio",(req, res)=> {
 app.get("/blog",(req, res)=> {
   res.render("blog");
 });
+let port = process.env.PORT;
+if(port == null || port == ""){
+  port = 3000;
+}
 
-
-app.listen(3000,()=>{
+app.listen(port,()=>{
   console.log("server up and runing");
 });
