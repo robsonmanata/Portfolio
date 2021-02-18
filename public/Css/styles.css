@@ -779,7 +779,7 @@ width: 250px;
 .footericon{
   width: 60px;height: 60px;margin-left: 590px;margin-top:0px;margin-bottom:0;position: relative;top: 70px;
 }
-@media only screen and (max-width: 1165px) {
+@media only screen and (max-width: 600px) {
   /* top section */
   .floating{
  height: 30px;
@@ -1043,6 +1043,7 @@ p{
   right: 0px;
     margin-left: 5px;
     top: 0px;
+    display: block;
 }
 .portfolioContent{
   margin-left: 0px;
