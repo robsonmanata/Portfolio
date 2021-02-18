@@ -259,7 +259,7 @@ height: 230px;
 
 .middle1{
     background-color: #252734;
-    height: 60vh;
+    height: 83vh;
 }
 .contact{
   margin-top: 0px;
@@ -567,7 +567,7 @@ background-color: #333646;
   width: 200px;
   margin-right: 500px;
   left: 250px;
-  bottom: 70px;
+  bottom: 30px;
 }
 .contactMeIntro p{
   margin-top:10px;
@@ -784,7 +784,7 @@ width: 250px;
   .floating{
  height: 30px;
  display: block;
-    left: 340px;
+    left: 300px;
     width: 15px;
   }
   .floating i{
@@ -850,6 +850,7 @@ font-size: 1rem;
   .homepageimage{
     left: 50px;
     bottom: 148px;
+    width: 300px;
   }
   .line1{
     height: 3px;
@@ -894,14 +895,12 @@ font-size: 1rem;
   height: 75vh;
 }
 
-.bottom{
-  /* width: max-content; */
-}
 .me2{
-  width: 210px;
+  position: relative;
   left: 210px;
-    bottom: 440px;
     animation-duration: 2s;
+    width: 150px;
+    bottom: 480px;
 }
 @keyframes example1 {
   from {opacity: 0;left:190px}
@@ -909,10 +908,11 @@ font-size: 1rem;
 }
 
 .me{
-    width: 210px;
-    bottom: 50px;
-    left: 15px;
+    bottom: 100px;
     width: 370px;
+    width: 350px;
+    left: 0px;
+    margin-left: 15px;
     animation-duration: 2s;
 }
 @keyframes example {
@@ -923,24 +923,25 @@ font-size: 1rem;
   font-family: 'Nunito', sans-serif;
   font-size: 12px;
   margin-top: 0;
-  width: 190px;
+  width: 160px;
 
 }
 .me p{
   font-family: 'Nunito', sans-serif;
   font-size: 12px;
   margin-top: 0;
-  width: 370px;
+  width: 350px;
 }
 .me2 h1,.me h1{
   margin-bottom: 0;
+  width: 150px;
 }
 
 .sendmessage{
 
     margin-left: 15px;
     right: 0px;
-    bottom: 150px;
+    bottom: 380px;
     width: 200px;
     left: 150px;
 }
@@ -956,6 +957,7 @@ font-size: 1rem;
   height: 130px;
   width: 120px;
   bottom:130px;
+  margin-left: 0;
 }
 .service2{
   height: 130px;
@@ -969,39 +971,44 @@ p{
 
 }
 .contact1{
-  width: 180px;
+  width: 150px;
   margin-left: 15px;
   left: 0px;
 }
 .contact2{
-  width: 200px;
-  left: 10px;
+  width: 190px;
+    margin-left: 10px;
+    left: 0px;
 }
 .contact p{
   font-size: 12px;
+  width: 150px;
 }
 .portfolioLeftLine{
-  width: 100px;
+  width: 90px;
     left: 15px;
     top: 15px;
 }
 .portfolioRightLine{
-  width: 100px;
-    left: 300px;
+  width: 90px;
+    left: 280px;
     bottom: 20px;
 }
 .portfolio h6{
   width: 200px;
-    margin-left: 130px;
+    margin-left: 118px;
 }
 .portfolio{
   bottom: 0px;
     top: 75px;
 }
+.middle1{
+  height: 77vh;
+}
 
 /* latestest work section */
 .middle2{
-  height: 80vh;
+  height: 90vh;
 }
 
 .project1{
@@ -1022,8 +1029,10 @@ p{
 .project2{
   width: 180px;
   height: 170px;
-  margin-right: 20px;
-  margin-left: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  position: absolute;
+  left: 190px;
 
 }
 
@@ -1051,7 +1060,7 @@ transform: scale(1.2);
   background-color: #ffaf29;
   width: 180px;
   margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 0px;
     height: 100px;
 }
@@ -1103,10 +1112,10 @@ transform: scale(1.2);
   }
   .bloglist{
     top: 25px;
-    width: 300px;
     left: 0px;
     right: 100px;
-    margin-left: 50px;
+    margin-left: 15px;
+    width: 250px;
   }
   .bloglist i{
     left: 225px;
@@ -1121,10 +1130,15 @@ transform: scale(1.2);
   .bloglist h6{
     font-size:14px;
   }
+  .contactme{
+    width: 150px;
+  }
   .contactMeIntro{
     bottom: 0px;
     left: 15px;
     width: 150px;
+    margin-right: 0px;
+
   }
   .contactMeIntro h5{
     position: relative;
@@ -1132,20 +1146,23 @@ transform: scale(1.2);
   }
   .contactMeIntro p{
     font-size: 12px;
-width: 250px;
+width: 140px;
   }
   #message{
     height: 190px;
+  }
+  .bottom{
+    height: 80vh;
   }
   .bottom input{
 
     bottom: 30px;
   }
   .bottom form{
-    width: 300px;
+    /* width: 300px;
     margin-left: 50px;
     position: relative;
-    bottom: 50px;
+    bottom: 50px; */
 
   }
   .footericon{
