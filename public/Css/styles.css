@@ -1270,8 +1270,10 @@ width: 140px;
     height: 80vh;
   }
   .bottom input{
+    position: relative;
+        bottom: 0px;
+        margin-top: 0px;
 
-    bottom: 30px;
   }
   .bottom form{
     /* width: 300px;
