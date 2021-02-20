@@ -1,5 +1,7 @@
 /* HTML elements */
-
+.custom-file-input input{
+  width: 108px
+}
 .custom-file-input::-webkit-file-upload-button {
   visibility: hidden;
 }
@@ -8,6 +10,7 @@
   display: inline-block;
   color: #ffaf29;
   border-radius: 3px;
+    font-family: 'Nunito', sans-serif;
   border: solid;
   padding: 5px 8px;
   outline: none;
@@ -22,6 +25,7 @@
 }
 .custom-file-input:active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  width:108px;
 }
 
 body{
@@ -475,6 +479,12 @@ animation-delay: 3s;
 .portfolio{
 
 }
+.e-magazine-img{
+  width:150px;
+  height:200px;
+  margin-left:80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .project1{
   position: relative;
   display: inline-block;
@@ -544,6 +554,9 @@ transform: scale(1.2);
   height: 50px;
   display: inline-block;
   position: relative;
+}
+.blogpage{
+  position: relative
 }
 .blog{
   padding-top: 20px;
@@ -734,8 +747,9 @@ padding: 2px;
   width: 300px;
   height: 300px;
   position: relative;
-  right: 250px;
+  right: 0px;
     top: 20px;
+    left:100px
 }
 .mypic p{
   font-size: 18px;
@@ -748,8 +762,10 @@ padding: 2px;
   display: inline-block;
   position: relative;
   width: 350px;
-  right: 100px;
-  bottom: 30px;
+  right: 0px;
+    left: 300px;
+    height: 400px;
+    bottom: 0px;
 }
 .coderDesign{
 padding-left: 140px;
@@ -875,11 +891,11 @@ padding:10px;
 }
 .subblogs2{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  left: 604px;
+  left: 630px;
   display: inline-block;
   position: relative;
   width:250px;
-  bottom: 315px;
+  bottom: 290px;
 }
 .footericon{
   width: 60px;
@@ -1144,7 +1160,7 @@ p{
   width: 180px;
   height: 170px;
   margin-right: 0px;
-  margin-left: 0px;
+  margin-left: 10px;
   position: absolute;
   left: 190px;
 
@@ -1158,6 +1174,8 @@ p{
     margin-left: 5px;
     top: 0px;
     display: block;
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
 .portfolioContent{
   margin-left: 0px;
@@ -1268,10 +1286,10 @@ width: 140px;
   }
   .bottom{
     height: 80vh;
-    position: relative;
+
   }
   .bottom input{
-    position: relative;
+
         bottom: 0px;
         margin-top: 0px;
 
@@ -1298,14 +1316,16 @@ width: 140px;
     height: 100px;
     position: absolute;
     right: 0px;
-    top: 95px;
+    top: 10px;
     left: 20px;
-    bottom: 300px;
+    bottom: 0px;
   }
   .about{
     width: 180px;
-    right: 30px;
-    bottom: 110px;
+    right: 0px;
+    left: 20px;
+    bottom: 90px;
+    height:0px;
   }
   .mypic h1{
    font-size: 1rem;
@@ -1318,9 +1338,9 @@ width: 140px;
     margin-left: 0px;
     width: 150px;
     position: relative;
-    right: 130px;
+    right: 100px;
     bottom: 270px;
-    top: 80px;
+    top: 100px;
   }
   .coder h1{
     font-size: 1rem;
@@ -1336,13 +1356,15 @@ width: 140px;
 .coderimg img{
   width: 300px;
     position: relative;
-    top: 0;
+    top: 0px;
+    left:50px;
 }
 .designer{
   width: 150px;
   margin-left: 5px;
-  bottom: 390px;
-    left: 45px;
+  bottom: 370px;
+    left: 90px;
+
 
 
 }
@@ -1365,7 +1387,10 @@ width: 140px;
 margin-left: 100px;
 }
 .skillOvervieline1{
-  left:15px;
+  left:50px;
+}
+.skillOvervieline2{
+  left:50px;
 }
 .bottom-container{
   position: relative;
@@ -1380,11 +1405,12 @@ margin-left: 100px;
   padding-left: 0px;
 }
 .largeblog{
-  width: 150px;
+  width: 100px;
   margin-bottom: 25px;
+  margin-left: 0px;
 }
 .largeblog img{
-width:150px;
+width:100px;
 height:100px;
 }
 .blogpage p{
@@ -1392,23 +1418,32 @@ padding:5px;
 font-size: 8px;
 }
 .subblogs img{
-  width:75px;
+  width:100px;
   height:50px;
 }
 .subblogs2 img{
-  width: 75px;
+  width: 100px;
     height: 50px;
 }
 .subblogs{
-  bottom: 136px;
-    width: 75px;
+    width: 100px;
   position: relative;
+  bottom: 253px;
+    right:20px;
 }
 .subblogs2{
-  width:75px;
-    left: 154px;
-    bottom: 158px;
-  position: relative;
+  width:100px;
+    left: 110px;
+    bottom: 253px;
+}
+.portfolioContentmain{
+  margin-left: 5px;
+}
+.e-magazine-img{
+  width:100px;
+  height:150px;
+  margin-left:50px;
+
 }
 }
 
