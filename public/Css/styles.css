@@ -1285,7 +1285,7 @@ width: 140px;
     height: 190px;
   }
   .bottom{
-    height: 80vh;
+    /* height: 80vh; */
     position: relative;
 
   }
