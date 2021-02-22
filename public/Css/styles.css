@@ -1265,6 +1265,7 @@ transform: scale(1.2);
   }
   .contactme{
     width: 150px;
+    height: 100vh;
   }
   .contactMeIntro{
     bottom: 0px;
