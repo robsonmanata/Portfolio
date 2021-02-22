@@ -1286,6 +1286,7 @@ width: 140px;
   }
   .bottom{
     height: 80vh;
+    position: relative;
 
   }
   .bottom input{
