@@ -26,14 +26,15 @@ app.use(express.static("public"));
 app.get("/",(req, res)=> {
   res.render("home");
 });
-app.get("/about",(req, res)=> {
-  res.render("about");
+
+app.get("/webdeveloper",(req, res)=> {
+  res.render("webdeveloper");
 });
 app.get("/contact",(req, res)=> {
   res.render("contact");
 });
-app.get("/portfolio",(req, res)=> {
-  res.render("portfolio");
+app.get("/websitedesign",(req, res)=> {
+  res.render("websitedesign");
 });
 app.get("/blog",(req, res)=> {
   res.render("blog");
