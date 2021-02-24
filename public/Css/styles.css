@@ -1407,12 +1407,12 @@ margin-left: 100px;
   padding-left: 0px;
 }
 .largeblog{
-  width: 350px;
+  width: 330px;
   margin-bottom: 25px;
-  margin-left: 0px;
+  margin-left: 20px;
 }
 .largeblog img{
-  width: 350px;
+  width: 330px;
 height: 200px;
 }
 .blogpage p{
@@ -1420,27 +1420,27 @@ padding:5px;
 font-size: 8px;
 }
 .subblogs img{
-  width:175px;
-  height:125px;
+  width:150px;
+  height:100px;
   margin-bottom: 10px;
 }
 .subblogs2 img{
-  width: 175px;
-    height: 125px;
+  width: 150px;
+    height: 100px;
     margin-bottom: 10px;
 }
 .subblogs{
-    width: 175px;
+    width: 150px;
   position: relative;
   bottom: 0;
-    right:5px;
+    left:20px;
     height: 200px;
     margin-bottom: 10px;
 }
 .subblogs2{
-  width:175px;
-    left: 175px;
-    bottom: 420px;
+  width:150px;
+    left: 20px;
+    bottom: 0;
     margin-bottom: 10px;
 }
 .portfolioContentmain{
