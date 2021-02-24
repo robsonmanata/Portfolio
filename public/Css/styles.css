@@ -970,13 +970,15 @@ padding:10px;
   .socialsicon {
 margin-bottom: 8px;
 margin-top: 8px;
+font-size: 25px;
   }
+
   .socialsicon a{
 font-size: 1rem;
 }
   .homepageimage{
     left: 50px;
-    bottom: 148px;
+    bottom: 180px;
     width: 300px;
   }
   .line1{
