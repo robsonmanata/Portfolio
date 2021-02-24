@@ -1143,7 +1143,7 @@ p{
 
 .project1{
   width: 180px;
-  height: 170px;
+  height: 210px;
   margin-right: 10px;
   margin-left: 5px;
   margin-bottom: 20px;
@@ -1158,7 +1158,7 @@ p{
 
 .project2{
   width: 180px;
-  height: 170px;
+  height: 210px;
   margin-right: 0px;
   margin-left: 10px;
   position: absolute;
@@ -1168,7 +1168,7 @@ p{
 
 .project3{
   width: 180px;
-  height: 170px;
+  height: 210px;
   margin-left: 20px;
   right: 0px;
     margin-left: 5px;
@@ -1202,8 +1202,8 @@ transform: scale(1.2);
     bottom: 30px;
 }
 @keyframes arrow {
-  from {left: 160px;}
-  to {left: 165px;}
+  from {left: 150px;}
+  to {left: 155px;}
 }
 
 }
@@ -1465,6 +1465,9 @@ font-size: 8px;
     float: none;
     display: block;
     text-align: left;
+  }
+  .portfolioContentmain i{
+    
   }
 
 }
