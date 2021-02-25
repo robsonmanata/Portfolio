@@ -46,8 +46,8 @@ app.get("/blog", (req, res) => {
 
 app.post("/", function(req, res) {
       if (req.body.message) {
-        console.log(req.files);
-        var file = req.files.attachment;
+        console.log(req.files.attachment);
+        var file = req.files.attachment[1];
         var filename = file.name;
         file.mv("./Uploads/" + filename, function(err) {
             if (err) {
@@ -77,7 +77,7 @@ app.post("/", function(req, res) {
 
                }
             });
-            
+
             res.redirect("/");
           }
           else{
