@@ -4,6 +4,7 @@ const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const fs = require("fs");
+const upload = require("express-fileupload");
 
 var transporter = nodemailer.createTransport({
   service: "gmail",
@@ -12,75 +13,87 @@ var transporter = nodemailer.createTransport({
     pass: process.env.GMAILPASS_AUTHENTICATE
   },
   tls: {
-         rejectUnauthorized: false
-     }
+    rejectUnauthorized: false
+  }
 });
 
 
 const app = express();
 app.set("view engine", "ejs");
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(express.static("public"));
+app.use(upload());
 
-app.get("/",(req, res)=> {
+app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.get("/webdeveloper",(req, res)=> {
+app.get("/webdeveloper", (req, res) => {
   res.render("webdeveloper");
 });
-app.get("/contact",(req, res)=> {
+app.get("/contact", (req, res) => {
   res.render("contact");
 });
-app.get("/websitedesign",(req, res)=> {
+app.get("/websitedesign", (req, res) => {
   res.render("websitedesign");
 });
-app.get("/blog",(req, res)=> {
+app.get("/blog", (req, res) => {
   res.render("blog");
 });
 
-app.post("/",function(req,res){
-  if(req.body.message){
+app.post("/", function(req, res) {
+      if (req.body.message) {
+        console.log(req.files);
+        var file = req.files.attachment;
+        var filename = file.name;
+        file.mv("./Uploads/" + filename, function(err) {
+            if (err) {
+              console.log(err);
+            } else {
+              var mailOptions = {
+                from: req.body.emailaddress,
+                to: "robsonmanata@gmail.com",
+                subject: "message from rob-portfolio sent by " + req.body.emailaddress,
+                text: "my name is " + req.body.firstname + " service requested [" + req.body.service + "]  " + req.body.message,
+                attachments: [{
+                  // path: '/path/to/file.txt'
+                  // filename:req.files.name ,
+                  //    content: req.files.data
+                  filename: filename,
+                  content: fs.createReadStream("./Uploads/" + filename)
+                }]
+              };
 
-    var mailOptions = {
-    from: req.body.emailaddress,
-    to: "robsonmanata@gmail.com",
-    subject:"message from rob-portfolio sent by " + req.body.emailaddress,
-    text:"my name is " + req.body.firstname + " service requested [" + req.body.service + "]  " +req.body.message,
-    attachments: [
-       {
+              transporter.sendMail(mailOptions, function(error, info) {
+                if (error) {
+                  console.log(error);
+                } else {
+                  console.log('Email sent: ' + info.response);
+                }
+              });
 
-         filename:req.body.attachment ,
-            content: req.body.attachment
-         // filename: req.body.attachment,
-         //  content: fs.createReadStream("Downloads/" + req.body.attachment)
-       }
-     ]
-  };
-
-  transporter.sendMail(mailOptions, function(error, info){
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-  });
-console.log(req.body.attachment);
-  res.redirect("/");
-  }
-  else{
-    res.redirect("/");
-  }
-
-});
+               }
+            });
+            
+            res.redirect("/");
+          }
+          else{
+            res.redirect("/");
+          }
+        });
 
 
-let port = process.env.PORT;
-if(port == null || port == ""){
-  port = 3000;
-}
 
-app.listen(port,()=>{
-  console.log("server up and runing");
-});
+
+
+      let port = process.env.PORT;
+      if (port == null || port == "") {
+        port = 3000;
+      }
+
+      app.listen(port, () => {
+        console.log("server up and runing");
+      });

@@ -476,9 +476,7 @@ animation-delay: 3s;
    background-color: #252734;
 
 }
-.portfolio{
 
-}
 .e-magazine-img{
   width:150px;
   height:200px;
@@ -1025,21 +1023,23 @@ font-size: 1rem;
 }
 
 .me2{
+  left: 0px;
+    float: right;
+    padding-right: 5px;
+    bottom: 495px;
   position: relative;
-  left: 210px;
     animation-duration: 2s;
-    width: 150px;
-    bottom: 480px;
+    width: 145px;
 }
 @keyframes example1 {
-  from {opacity: 0;left:190px}
-  to {opacity: 0.9;left:210px}
+  from {opacity: 0;left:0px}
+  to {opacity: 0.9;left:5px}
 }
 
 .me{
     bottom: 100px;
     width: 370px;
-    width: 350px;
+    width: 330px;
     left: 0px;
     margin-left: 15px;
     animation-duration: 2s;
@@ -1052,14 +1052,14 @@ font-size: 1rem;
   font-family: 'Nunito', sans-serif;
   font-size: 12px;
   margin-top: 0;
-  width: 160px;
+  width: 145px;
 
 }
 .me p{
   font-family: 'Nunito', sans-serif;
   font-size: 12px;
   margin-top: 0;
-  width: 350px;
+  width: 330px;
 }
 .me2 h1,.me h1{
   margin-bottom: 0;
@@ -1067,31 +1067,32 @@ font-size: 1rem;
 }
 
 .sendmessage{
-
-    margin-left: 15px;
+  left: 144px;
+      bottom: 370px;
+      margin-left: 10px;
     right: 0px;
-    bottom: 380px;
     width: 200px;
-    left: 150px;
 }
 .service h2{
   margin-top:50px;
 }
 
 .service{
-  margin-top: 240px;
   margin-left: 10px;
+  position: relative;
+    bottom: 100px;
+    margin-top: 0px;
 }
 .service1{
   height: 130px;
   width: 120px;
-  bottom:130px;
+  bottom:0px;
   margin-left: 0;
 }
 .service2{
   height: 130px;
   width: 120px;
-  bottom: 130px;
+  bottom: 0px;
 }
 p{
   font-size: 20px;
@@ -1114,39 +1115,39 @@ p{
   width: 150px;
 }
 .portfolioLeftLine{
-  width: 90px;
+  width: 80px;
     left: 15px;
     top: 15px;
 }
 .portfolioRightLine{
-  width: 90px;
-    left: 280px;
+  width: 80px;
+    left: 270px;
     bottom: 20px;
 }
 .portfolio h6{
   width: 200px;
-    margin-left: 118px;
+    margin-left: 108px;
 }
 .portfolio{
   bottom: 0px;
-    top: 75px;
+    top: 25px;
 }
 .middle1{
-  height: 77vh;
+  height: auto;
 }
 
 /* latestest work section */
 .middle2{
-  height: 90vh;
+  height: auto;
 }
 .middle4{
-  height: 40vh;
+  height: auto;
 }
 
 .project1{
-  width: 180px;
+  width: 175px;
   height: 210px;
-  margin-right: 10px;
+  margin-right: 0px;
   margin-left: 5px;
   margin-bottom: 20px;
 }
@@ -1159,19 +1160,18 @@ p{
 }
 
 .project2{
-  width: 180px;
+  width: 175px;
   height: 210px;
-  margin-right: 0px;
-  margin-left: 10px;
+  margin-right: 0;
+  margin-left: 0;
   position: absolute;
-  left: 190px;
+  left: 184px;
 
 }
 
 .project3{
-  width: 180px;
+  width: 175px;
   height: 210px;
-  margin-left: 20px;
   right: 0px;
     margin-left: 5px;
     top: 0px;
@@ -1181,7 +1181,7 @@ p{
 }
 .portfolioContent{
   margin-left: 0px;
-  margin-top: 100px;
+  margin-top: 50px;
 
 }
 #explore{
@@ -1193,7 +1193,7 @@ transform: scale(1.2);
 }
 .projectimg{
   background-color: #ffaf29;
-  width: 180px;
+  width: 175px;
   margin-top: 5px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1271,7 +1271,7 @@ transform: scale(1.2);
   }
   .contactMeIntro{
     bottom: 0px;
-    left: 15px;
+    left: 10px;
     width: 150px;
     margin-right: 0px;
 
@@ -1306,7 +1306,7 @@ width: 140px;
 
   }
   .footericon{
-    margin-left: 170px;
+    margin-left: 160px;
   }
 
   /* aboutme page mobile */
@@ -1411,7 +1411,7 @@ margin-left: 100px;
 .largeblog{
   width: 330px;
   margin-bottom: 25px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .largeblog img{
   width: 330px;
@@ -1435,13 +1435,13 @@ font-size: 8px;
     width: 150px;
   position: relative;
   bottom: 0;
-    left:20px;
+    left:10px;
     height: 200px;
     margin-bottom: 10px;
 }
 .subblogs2{
   width:150px;
-    left: 20px;
+    left: 10px;
     bottom: 0;
     margin-bottom: 10px;
 }
@@ -1469,8 +1469,17 @@ font-size: 8px;
     text-align: left;
   }
   .portfolioContentmain {
-    padding-left: 8px;
-    padding-right: 8px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 5px;
+    width: 360px;
+  }
+  .portfolioContentmain a{
+    margin: 0;
+  }
+  .contact{
+    position: relative;
+    bottom: 280px;
   }
 
 }
