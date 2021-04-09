@@ -47,7 +47,7 @@ app.get("/blog", (req, res) => {
 app.post("/", function(req, res) {
       if (req.body.message) {
         console.log(req.files.attachment);
-        var file = req.files.attachment[1];
+        var file = req.files.attachment;
         var filename = file.name;
         file.mv("./Uploads/" + filename, function(err) {
             if (err) {
