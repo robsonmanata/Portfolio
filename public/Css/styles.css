@@ -27,6 +27,16 @@
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
   width:108px;
 }
+.successmessage{
+  margin: auto;
+ width: 50%;
+}
+.paperplane{
+  margin-left: 25%;
+}
+.successmessagetxt{
+  text-align: center;
+}
 
 body{
   margin: 0;
@@ -1210,6 +1220,11 @@ transform: scale(1.2);
 
 }
 @media screen and (max-width: 600px) {
+  .paperplane{
+    margin-left: 0;
+    width: 180px;
+    height: 180px;
+  }
   .humburger{
     margin-top: 5px;
     font-size: 25px;

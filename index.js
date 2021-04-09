@@ -43,6 +43,9 @@ app.get("/websitedesign", (req, res) => {
 app.get("/blog", (req, res) => {
   res.render("blog");
 });
+app.get("/messageSent", (req, res) => {
+  res.render("messageSent");
+});
 
 app.post("/", function(req, res) {
       if (req.body.message) {
@@ -78,7 +81,7 @@ app.post("/", function(req, res) {
                }
             });
 
-            res.redirect("/");
+            res.redirect("/messageSent");
           }
           else{
             res.redirect("/");
