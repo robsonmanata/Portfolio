@@ -10,7 +10,7 @@ var transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "robsonmanata@gmail.com",
-    pass: process.env.GMAILPASS_AUTHENTICATE
+    pass: process.env.GMAILPASS_AUTHENTICATE1
   },
   tls: {
     rejectUnauthorized: false
@@ -48,8 +48,8 @@ app.get("/messageSent", (req, res) => {
 });
 
 app.post("/", function(req, res) {
-      if (req.body.message) {
-        console.log(req.files.attachment);
+      if (req.body.name) {
+        console.log(req.body.name);
         var file = req.files.attachment;
         var filename = file.name;
         file.mv("./Uploads/" + filename, function(err) {
@@ -61,13 +61,14 @@ app.post("/", function(req, res) {
                 to: "robsonmanata@gmail.com",
                 subject: "message from rob-portfolio sent by " + req.body.emailaddress,
                 text: "my name is " + req.body.firstname + " service requested [" + req.body.service + "]  " + req.body.message,
-                attachments: [{
+                attachments:[{
                   // path: '/path/to/file.txt'
                   // filename:req.files.name ,
                   //    content: req.files.data
                   filename: filename,
                   content: fs.createReadStream("./Uploads/" + filename)
                 }]
+
               };
 
               transporter.sendMail(mailOptions, function(error, info) {
@@ -82,6 +83,25 @@ app.post("/", function(req, res) {
             });
 
             res.redirect("/messageSent");
+          }
+          else if (!req.body.name) {
+            var mailOptions = {
+              from: req.body.emailaddress,
+              to: "robsonmanata@gmail.com",
+              subject: "message from rob-portfolio sent by " + req.body.emailaddress,
+              text: "my name is " + req.body.firstname + " service requested [" + req.body.service + "]  " + req.body.message,
+
+            };
+
+            transporter.sendMail(mailOptions, function(error, info) {
+              if (error) {
+                console.log(error);
+              } else {
+                console.log('Email sent: ' + info.response);
+              }
+            });
+            res.redirect("/messageSent");
+
           }
           else{
             res.redirect("/");
