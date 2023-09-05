@@ -12,6 +12,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <title>Web developer-Robson Manata</title>
+
 </head>
 
 <body>
@@ -87,7 +88,8 @@
         <h2>You can't use up creativity the more you use , the more you have at your disposal .</h2>
         <h5>-Maya Angelou-</h5>
         <p>I have been building websites and web applications for quite a while working mostly as a freelancer and on personal projects check out my portfolio to have a feel of what I am capable of .</p>
-        <h1>2</h1>
+        <h1 id="experience"></h1>
+        <H1 id="clock"></H1>
         <h6>Years of experience</h6>
         <h1 >100%</h1>
         <h6>projcet success</h6>
@@ -210,4 +212,38 @@
           </form>
         </div>
         </section>
+
+        <script>
+          let startyr  =2019
+        const yr= new Date().getFullYear();
+        
+        document.getElementById("experience").innerHTML = yr - startyr;
+        
+        function currentTime() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
+
+  if(hh == 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + ":" + ss + " " + session;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+}
+currentTime()
+        </script>
+        
           <%-include("partials/footer")-%>
