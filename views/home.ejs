@@ -208,7 +208,7 @@
                 <input style="width:108px" class="custom-file-input" type="file" id="attachment" name="attachment" accept="image/*" multiple>
             </div>
 
-            <input onclick="alert("success")" type="submit" value="Submit">
+            <input onclick=alert"("success")" type="submit" value="Submit">
           </form>
         </div>
         </section>
@@ -217,7 +217,7 @@
           let startyr  =2019
         const yr= new Date().getFullYear();
         
-        document.getElementById("experience").innerHTML = yr - startyr;
+        document.getElementById("clock").innerHTML = yr - startyr;
         
         function currentTime() {
   let date = new Date(); 
@@ -240,7 +240,7 @@
     
    let time = hh + ":" + mm + ":" + ss + " " + session;
 
-  document.getElementById("clock").innerText = time; 
+  document.getElementById("").innerText = yr - startyr; 
   let t = setTimeout(function(){ currentTime() }, 1000);
 }
 currentTime()
